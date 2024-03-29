@@ -1,0 +1,10 @@
+package com.doctorapp.controller;
+
+import org.springframework.ui.Model;
+
+public class DoctorController {
+	public String home(Model model) {
+		return home;
+	}
+
+}

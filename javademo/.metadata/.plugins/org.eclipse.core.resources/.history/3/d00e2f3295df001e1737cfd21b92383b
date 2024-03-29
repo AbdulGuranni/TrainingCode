@@ -1,0 +1,6 @@
+package com.bookapp.service;
+
+public interface IBookservice {
+	List<Book> getByAuthor(String author);
+
+}

@@ -1,0 +1,62 @@
+package com.bookapp;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.bookapp.service.IBookService;
+
+@SpringBootApplication
+public class SpringBookappJdbcApplication implements CommandLineRunner{
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBookappJdbcApplication.class, args);
+	}
+	@Autowired
+	private IBookService bookService;
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		try {
+			System.out.println("Enter your choice");
+			int choice = sc.nextInt();
+			switch(choice) {
+			case 1: System.out.println("Enter the bookid");
+					int bookid = sc.nextInt();
+					System.out.println("Enter book price");
+					double bookprice = sc.nextDouble();
+					bookService.updateBook(bookid, bookprice);
+					break;
+			case 2: System.out.println("Enter id");
+					int bookId = sc.nextInt();
+					System.out.println(bookService.getById(bookId));
+					break;
+			case 3: System.out.println("Book details of all  book");
+					System.out.println(bookService.getAll());
+					break;
+			case 4: System.out.println("Enter the category to find");
+					String findcategory = sc.next();
+					System.out.println(bookService.getByCategory(findcategory));
+					break;
+					
+			case 5: System.out.println("Enter the price to find");
+					double findPrice = sc.nextDouble();
+					System.out.println(bookService.getByLesserPrice(findPrice));
+					break;
+			
+			case 6:System.out.println("Enter the author name to find");
+					String findAuthName = sc.next();
+					System.out.println(bookService.getByAuthorContains(findAuthName));
+					break;
+			}
+		}catch(Exception e) {
+			
+		}
+		
+	}
+
+}

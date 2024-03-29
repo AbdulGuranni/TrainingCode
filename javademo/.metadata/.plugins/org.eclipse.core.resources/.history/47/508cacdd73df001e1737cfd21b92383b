@@ -1,0 +1,9 @@
+package com.voya.training;
+
+public class StudentDetails {
+	
+	public int totalMarks(int marks1, int marks2, int marks3) {
+		return 0;
+	}
+
+}

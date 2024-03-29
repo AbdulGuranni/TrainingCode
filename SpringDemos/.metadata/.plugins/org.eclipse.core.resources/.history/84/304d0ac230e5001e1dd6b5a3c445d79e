@@ -1,0 +1,14 @@
+package com.voya.autowire;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Keyboard implements IInstrument{
+
+	@Override
+	public void play(String song) {
+		// TODO Auto-generated method stub
+		System.out.println("The keyboard song is"+song);
+	}
+	
+}

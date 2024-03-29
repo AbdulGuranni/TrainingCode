@@ -1,0 +1,13 @@
+package com.voya.sample;
+
+import org.junit.platform.suite.api.SelectPackages;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@SelectPackages({"com.voya.testcases.trial","com.stud.testcases"})
+@RunWith(Suite.class)
+@SuiteClasses({})
+public class AllTests {
+
+}

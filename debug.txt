@@ -1,0 +1,4 @@
+in queries update query , the column name was wrong
+in doctorServiceimpl the add doctor implementation was not present
+in doctorServiceimpl the getBySpeciality was returning null
+and in add query the number of parameters was more

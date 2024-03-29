@@ -1,0 +1,21 @@
+package com.voya.training;
+
+import java.util.Arrays;
+
+public class Calculator {
+	public int sum(int x,int y) {
+		return x+y;
+	}
+	public int product(int x,int y) {
+		return x*y;
+	}
+	
+	public String greetMessage(String name) {
+		return "Welcome "+name.toUpperCase();
+	}
+	
+	public List<String> showCourses(){
+		return Arrays.asList(null)
+	}
+
+}

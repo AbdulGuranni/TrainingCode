@@ -1,0 +1,77 @@
+package com.bookapp.service;
+
+import com.bookapp.exception.BookNotFoundException;
+import com.bookapp.exception.IdNotFoundException;
+import com.bookapp.model.Book;
+import com.bookapp.repository.IBookRepository;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+@Service
+public class BookServiceImpl implements IBookService {
+	@Autowired
+	private IBookRepository bookRepository;
+	@Override
+	public void addBook(Book book) {
+		// TODO Auto-generated method stub
+		bookRepository.addBook(book);
+	}
+
+	@Override
+	public void updateBook(int bookId, double price) {
+		// TODO Auto-generated method stub
+		bookRepository.updateBook(bookId, price);
+	}
+
+	@Override
+	public void deleteBook(int bookId) {
+		// TODO Auto-generated method stub
+		bookRepository.deleteBook(bookId);
+		
+	}
+
+	@Override
+	public List<Book> findAll() {
+		List<Book> books = bookRepository.findAll();
+		return null;
+	}
+
+	@Override
+	public List<Book> findByAuthorContains(String author) throws BookNotFoundException {
+		List<Book> books = bookRepository.findByAuthorContains(author);
+		if(books == null)
+			throw new BookNotFoundException("Book Not Found");
+		else
+			return books;
+	}
+
+	@Override
+	public List<Book> findByCategory(String category) throws BookNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findByLesserPrice(double price) throws BookNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findByAuthorCategory(String author, String category) throws BookNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book findById(int bookId) throws IdNotFoundException {
+		Book book = bookRepository.findById(bookId);
+		if(book==null)
+			throw new IdNotFoundException("Id not found");
+		else
+			return book;
+	}
+    
+}

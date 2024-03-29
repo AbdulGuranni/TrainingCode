@@ -1,0 +1,20 @@
+package com.voya.food;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.voya.autowire.Performance;
+
+public class Customer {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context = new AnnotationConfigApplicationContext("com.voya.fod");
+		Waiter waiter = (Waiter) context.getBean("waiter",Waiter.class);
+		List<String> foods = waiter.viewMenuCard("chinese");
+		for(String food:foods) {
+			System.out.println(food);
+		}
+	}
+}

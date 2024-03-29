@@ -1,0 +1,12 @@
+package com.spring.auto;
+
+public class Triangle implements Shape{
+
+	@Override
+	public void area(int x, int y) {
+		// TODO Auto-generated method stub
+		int TriangleArea = (1/2)*x*y;
+	}
+	
+
+}

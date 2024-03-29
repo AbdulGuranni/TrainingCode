@@ -1,0 +1,23 @@
+package com.spring.auto;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+@Component
+public class ShapeFactory {
+	@Qualifier("rectangle");
+	IShape shape;
+
+	public IShape getShape() {
+		return shape;
+	}
+	@Autowired
+	public void setShape(IShape shape) {
+		this.shape = shape;
+	}
+	
+	void printArea(int x, int y) {
+		System.out.println("area...");
+	}
+
+}

@@ -1,0 +1,13 @@
+p{
+    background-color: crimson;
+    text-transform: uppercase;
+}
+
+h1{
+    background-color: teal;
+    text-transform: uppercase;
+}
+h2{
+    background-color: olivedrab;
+    border: 3px;
+}

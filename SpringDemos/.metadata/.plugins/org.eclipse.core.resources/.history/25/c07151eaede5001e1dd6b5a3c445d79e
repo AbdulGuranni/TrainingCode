@@ -1,0 +1,80 @@
+package com.doctorapp.repository;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.doctorapp.exception.DoctorNotFoundException;
+import com.doctorapp.exception.IdNotFoundException;
+import com.doctorapp.model.Doctor;
+import util.DoctorDb;
+import util.Queries;
+
+public class DoctorRepositoryImpl implements IDoctorRepository {
+
+	@Override
+	public void addDoctor(Doctor doctor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateDoctor(int doctorId, double fees) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteDoctor(int doctorId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Doctor findById(int doctorId) throws IdNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> findSpeciality(String speciality) throws DoctorNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> findAll() throws DoctorNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> findBySpecialityAndExp(String speciality, int experience) throws DoctorNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> findBySpecialityAndLessFees(String speciality, double fees) throws DoctorNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> findBySpecialityAndRatings(String speciality, int ratings) throws DoctorNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> findSpecialityAndNameContains(String speciality, String doctorName)
+			throws DoctorNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

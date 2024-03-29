@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Table</legend>
+    <table border="1">
+        
+            
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="username"  placeholder="Enter Name"><br></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"><br></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male" checked>male
+                <input type="radio" name="gender" value="female" checked>female<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td>
+                <select name="course" multiple size="3">
+                    <option value="Java">Java</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Node">Node</option>
+                </select>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td> Hobbies</td>
+            <td>
+                <input type="checkbox" name="hobby" value="dance">Dance
+                <input type="checkbox" name="hobby" value="music">Music
+                <input type="checkbox" name="hobby" value="sports">Sports
+                <input type="checkbox" name="hobby" value="reading">reading
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Comments</td>
+            <td><textarea rows="20" columns="20">Share your thoughts</textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Enter Details" align="center"></td>
+        </tr>
+    </table>
+    </fieldset>
+</body>
+</html>

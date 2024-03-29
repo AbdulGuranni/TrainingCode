@@ -1,0 +1,21 @@
+package com.doctorapp.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+
+import com.doctorapp.exception.DoctorNotFoundException;
+import com.doctorapp.model.Doctor;
+import com.doctorapp.service.IDoctorService;
+
+public class DoctorController {
+	@Autowired
+	private IDoctorService doctorService;
+	public String home(Model model) throws DoctorNotFoundException {
+		List<Doctor> doctor = doctorService.getAll();
+		model.addAttribute("doctor",doctor);
+		return "home";
+	}
+
+}

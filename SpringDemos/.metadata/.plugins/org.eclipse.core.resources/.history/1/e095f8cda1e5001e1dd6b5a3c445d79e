@@ -1,0 +1,33 @@
+package com.voya.food;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Waiter {
+	@Autowired
+	@Qualifier("chinese")
+	IFoodMenu menu;
+	
+	@Autowired
+	@Qualifier("indian")
+	IFoodMenu indian;
+	
+	@Autowired
+	@Qualifier("italian")
+	IFoodMenu italian;
+	
+	List<String> viewMenuCard(String choice){
+		List<String> choi=null;
+		if(choice.equals("chinese"))
+			choi =menu.showMenu();
+		if(choice.equals("indian"))
+			choi = indian.showMenu();
+		if(choice.equals("italian"))
+			choi =italian.showMenu();
+		
+		return choi;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.voya.autowire;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Guitar implements IInstrument{
+
+	@Override
+	public void play(String song) {
+		// TODO Auto-generated method stub
+		System.out.println("The guitar song is"+song);
+	}
+	
+
+}

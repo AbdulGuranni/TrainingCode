@@ -1,0 +1,32 @@
+package com.voya.setter;
+
+public class Engine {
+	private int capacity;
+	private String type;
+	private Engine engine;
+	public int getCapacity() {
+		return capacity;
+	}
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	@Override
+	public String toString() {
+		return "Engine [capacity=" + capacity + ", type=" + type + "]";
+	}
+	
+	public Engine getEngine(Engine engine) {
+		return engine;
+	}
+	
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+}

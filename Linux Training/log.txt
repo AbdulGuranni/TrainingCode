@@ -1,0 +1,2 @@
+ls: cannot access 'demo1': No such file or directory
+ls: cannot access 'courses': No such file or directory

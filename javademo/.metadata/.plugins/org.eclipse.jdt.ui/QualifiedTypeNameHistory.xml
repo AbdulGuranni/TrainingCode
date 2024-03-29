@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
+    <fullyQualifiedTypeName name="com.voya.exception.InvalidNumberException"/>
+    <fullyQualifiedTypeName name="org.junit.platform.suite.api.SelectPackages"/>
+    <fullyQualifiedTypeName name="org.junit.platform.suite.api.IncludePackages"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+    <fullyQualifiedTypeName name="org.junit.platform.suite.api.ExcludePackages"/>
+    <fullyQualifiedTypeName name="org.junit.platform.suite.api.SelectClasses"/>
+    <fullyQualifiedTypeName name="com.voya.testcases.CalculatorTest"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Tag"/>
+    <fullyQualifiedTypeName name="org.junit.platform.suite.api.IncludeTags"/>
+    <fullyQualifiedTypeName name="org.junit.platform.suite.api.ExcludeTags"/>
+    <fullyQualifiedTypeName name="com.voya.training.StudentDetails"/>
+    <fullyQualifiedTypeName name="com.voya.training.Calculator"/>
+    <fullyQualifiedTypeName name="com.bookapp.service.OrderDetails"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bookapp.model.Book"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.mockito.Mock"/>
+    <fullyQualifiedTypeName name="com.bookapp.service.IBookService"/>
+    <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
+    <fullyQualifiedTypeName name="org.mockito.Mockito"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.extension.ExtendWith"/>
+    <fullyQualifiedTypeName name="org.mockito.junit.jupiter.MockitoExtension"/>
+    <fullyQualifiedTypeName name="org.junit.platform.runner.JUnitPlatform"/>
+    <fullyQualifiedTypeName name="com.bookapp.exception.BookNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

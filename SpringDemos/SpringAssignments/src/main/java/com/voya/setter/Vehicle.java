@@ -1,0 +1,44 @@
+package com.voya.setter;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+@Component
+public class Vehicle {
+	private Integer vehicleId;
+	private String model;
+	private String brand;
+	private double price;
+	public Integer getVehicleId() {
+		return vehicleId;
+	}
+	@Value("1")
+	public void setVehicleId(Integer vehicleId) {
+		this.vehicleId = vehicleId;
+	}
+	public String getModel() {
+		return model;
+	}
+	@Value("X10")
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	@Value("Audi")
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public double getPrice() {
+		return price;
+	}
+	@Value("1234567")
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Vehicle [vehicleId=" + vehicleId + ", model=" + model + ", brand=" + brand + ", price=" + price + "]";
+	}
+	Engine engine;
+}
